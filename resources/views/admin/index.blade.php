@@ -1,8 +1,8 @@
 @extends('layouts.admin')
 
 @section('title', '7Star system')
-@section('content-title', 'Dashboard')
-@section('content-page-name', 'Dashboard')
+@section('content-title', 'الصفحة الرئيسية')
+@section('content-page-name', 'الصفحة الرئيسية')
 
 @section('content')
 

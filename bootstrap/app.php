@@ -8,10 +8,10 @@ use Illuminate\Routing\Router;
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
         function(Router $router) {
-            $router->middleware('web')
+            $router->middleware(['web', 'guest'])
                 ->group(base_path('routes/web.php'));
 
-            $router->middleware('web')
+            $router->middleware(['web'])
                 ->group(base_path('routes/admin.php'));
         },
 //        web: __DIR__.'/../routes/web.php',
